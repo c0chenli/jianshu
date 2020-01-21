@@ -9,6 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import Home from "./pages/home";
 import Detail from "./pages/detail/loadable";
 import Login from "./pages/login";
+import Register from "./pages/register"
 import Write from "./pages/write";
 import MainPage from "./pages/mainpage";
 import Community from "./pages/community";
@@ -25,6 +26,7 @@ function App() {
               <Header/>
               <Route path='/' exact component={MainPage}></Route>
               <Route path='/login' exact component={Login}></Route>
+              <Route path='/register' exact component={Register}></Route>
               <Route path='/write' exact component={Write}></Route>
               <Route path='/mainpage' exact component={MainPage}></Route>
               <Route path='/home' exact component={Home}></Route>

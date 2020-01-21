@@ -86,7 +86,9 @@ class Header extends Component {
                     <Link to={'/community'}>
                         <NavItem className='left active'>全球社区</NavItem>
                     </Link>
-                    <NavItem className='right register'>注册</NavItem>
+                    <Link to={'/register'}>
+                        <NavItem className='right register'>注册</NavItem>
+                    </Link>
                     {
                         login ?
                             <NavItem onClick={logout} className='right'>退出</NavItem> :
